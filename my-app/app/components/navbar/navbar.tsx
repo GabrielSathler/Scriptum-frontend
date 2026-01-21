@@ -8,20 +8,20 @@ const data = [
 
 export const Navbar = () => {
   return (
-    <header className="fixed top-0 z-50 w-full bg-white/60 backdrop-blur-sm border-b border-slate-200">
+    <header className="fixed top-0 z-50 w-full bg-white/60 backdrop-blur-sm border-b border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <nav className="hidden md:flex gap-6 items-center text-center">
             <div className="flex items-center gap-6 py-8">
               <Link href="/" className="text-lg font-bold text-slate-900">
-                <span className="">Scriptum</span>
+                <span className="text-2xl">SCRIPTUM</span>
               </Link>
               
               {data.map((item) => (
                 <Link
                   key={item.id}
                   href={item.href}
-                  className="relative flex text-md font-medium text-slate-700 hover:text-slate-900 group"
+                  className="relative flex text-md text-slate-700 hover:text-slate-900 group"
                 >
                   <span>
                     {item.label}

@@ -80,6 +80,38 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* Font options: default maps heading/body variables to loaded font variables.
+   Swap by changing the body class to one of: `font-option-1`..`font-option-4`.
+
+   Options provided:
+   1) Playfair Display + Inter (Medium-like: elegant display serif + neutral sans)
+   2) Merriweather + Roboto (classic readable serif + Roboto)
+   3) Lora + Source Sans 3 (friendly serif + neutral sans)
+   4) Abril Fatface + Poppins (bold display serif + geometric sans)
+*/
+
+:root {
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-inter);
+}
+
+.font-option-1 {
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-inter);
+}
+.font-option-2 {
+  --font-heading: var(--font-merriweather);
+  --font-body: var(--font-roboto);
+}
+.font-option-3 {
+  --font-heading: var(--font-lora);
+  --font-body: var(--font-source-sans-3);
+}
+.font-option-4 {
+  --font-heading: var(--font-abril);
+  --font-body: var(--font-poppins);
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -120,5 +152,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
   }
 }
