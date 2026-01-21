@@ -16,7 +16,7 @@ export const Navbar = () => {
               <Link href="/" className="text-lg font-bold text-slate-900">
                 <span className="">Scriptum</span>
               </Link>
-
+              
               {data.map((item) => (
                 <Link
                   key={item.id}
@@ -41,7 +41,7 @@ export const Navbar = () => {
               Entrar
             </Link>
 
-            <Link href="/cadastro" className="hidden sm:inline-flex items-center px-3 py-1.5 bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-slate-800">
+            <Link href="/cadastrar" className="hidden sm:inline-flex items-center px-3 py-1.5 bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-slate-800">
               Cadastrar
             </Link>
           </div>
