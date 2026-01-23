@@ -10,9 +10,9 @@ import Typewriter from "typewriter-effect";
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full bg-white">
-      <Navbar />
+      
 
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none -z-1">
         <div className="h-full w-full bg-[radial-gradient(circle,#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-80" />
       </div>
 
@@ -42,11 +42,11 @@ export default function Home() {
         </div>
       </div>
       <Image
-        src="/imagem_writer.webp"
+        src="/mao-desenhada-dia-mundial-da-saude-mental.png"
         alt="Background image"
         width={500}
         height={500}
-        className="hidden md:block absolute left-355 top-45 z-0 pointer-events-none opacity-90"
+        className="hidden md:block absolute left-280 top-45 z-0 pointer-events-none opacity-90"
       />
     </div>
   );

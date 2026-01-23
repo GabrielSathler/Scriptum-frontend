@@ -10,6 +10,7 @@ import {
   Poppins,
 } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./components/navbar/navbar";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -63,6 +64,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} ${merriweather.variable} ${roboto.variable} ${lora.variable} ${sourceSans.variable} antialiased font-option-2`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
